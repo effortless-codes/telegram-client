@@ -1,0 +1,40 @@
+{
+    "name": "winatabayu00/telegram-client",
+    "description": "Telegram client",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.1",
+    "authors": [
+        {
+            "name": "Winata bayu",
+            "email": "winatabayu01@email.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "guzzlehttp/guzzle": "^7.0",
+        "illuminate/container": "^9.0|^10.0",
+        "illuminate/database": "9.0|^10.0",
+        "illuminate/contracts": "9.0|^10.0",
+        "illuminate/support": "9.0|^10.0",
+        "illuminate/events": "9.0|^10.0",
+
+        "nesbot/carbon": "^2.66"
+    },
+    "autoload": {
+        "psr-4": {
+            "Winata\\Core\\Telegram\\": "src/"
+        }, "files": [
+            "helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Winata\\Core\\Telegram\\BaseServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
